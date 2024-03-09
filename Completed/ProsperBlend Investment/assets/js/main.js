@@ -145,16 +145,4 @@
 })(jQuery);
 
 
-// GOOGLE SHEETS
-
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyCwAD2iYmYNco8q92aw83oJm12cPrWMMxciaFhdLljs2cF5H7yEc8r_NYX__rsyU3Mxw/exec'; // Replace with your Google Apps Script URL
-
-  const form = document.forms['WasheKachilo']; // Replace 'yourFormName' with the actual name of your form
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Form submitted successfully', response))
-      .catch(error => console.error('Error submitting form', error));
-  });
 
