@@ -1,14 +1,3 @@
-/*
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/setTimeout(function () {
-            // Hide the loading overlay when content is loaded
-            document.getElementById('loading-overlay').style.opacity = '0';
-
-            // Show the content
-            document.getElementById('content').style.display = 'block';
-        }, 3000); // Adjust the delay time as needed
 
 (function($) {
 
